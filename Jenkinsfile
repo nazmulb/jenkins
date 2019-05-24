@@ -5,7 +5,7 @@ pipeline {
             steps {
                 timeout(time: 2, unit: 'MINUTES') {
                     retry(5) {
-                        sh './learning/flakey-deploy.sh'
+                        sh 'bash ./learning/flakey-deploy.sh'
                     }
                 }
             }
