@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
 
-echo "Nazmul"
+echo "Fail!";
+exit 1
