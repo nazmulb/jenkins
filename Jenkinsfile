@@ -13,12 +13,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        success {
-            slackSend channel: '#cicd',
-                  color: 'good',
-                  message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
-        }
-    }
 }
