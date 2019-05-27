@@ -16,9 +16,9 @@ pipeline {
 
     post {
         success {
-            mail to: 'nazmul.basher@gmail.com',
-                subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-                body: "Something is wrong with ${env.BUILD_URL}"
+            slackSend channel: '#cicd',
+                  color: 'good',
+                  message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
         }
     }
 }
