@@ -1,1 +1,2 @@
+https://jenkins.io/doc/book/installing/#on-macos-and-linux
 https://jenkins.io/doc/
